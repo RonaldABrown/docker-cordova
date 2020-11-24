@@ -19,7 +19,7 @@ RUN apt-get update
 RUN apt-get install -y nodejs
 
 # Install Cordova
-RUN npm install -g cordova
+RUN npm install -g cordova browserify uglify-js
 RUN cordova telemetry off
 
 RUN mkdir -p /cordova
